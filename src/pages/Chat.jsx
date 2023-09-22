@@ -17,7 +17,7 @@ const Chat = () => {
     //   fetch dta
     const fetechData = async (chat)=>{
         try{
-            const response = await fetch("https://chinback.onrender.com/chat",{
+            const response = await fetch("https://chainback.onrender.com/chat",{
                 method:"POST",
                 headers:{
                     "content-type":"application/json"
