@@ -1,7 +1,6 @@
-import logo from '../assets/logo.png';
+import logo from '../assets/Logo.png';
 import { Link } from 'react-router-dom';
 import { useMutation } from 'react-query';
-import {useState,React,Fragment} from 'react'
 
 const Chat = () => {
   const [prompt, setPrompt] = useState('');

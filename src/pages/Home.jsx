@@ -2,7 +2,7 @@ import {Container,Row,Col} from 'react-bootstrap'
 import {Link} from "react-router-dom"
 
 import indexImg from "../assets/index_img.png"
-import logo from "../assets/logo.png"
+import logo from "../assets/Logo.png"
 
 
 const Home = () =>{
