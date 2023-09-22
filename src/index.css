@@ -327,7 +327,7 @@ label{
 @media screen and (max-width:991px) {
 
   .chat{
-    width: 90%;
+    width: 100%;
   }
   .chatArea{
     padding:20px;

@@ -66,7 +66,7 @@ const Generator = () =>{
                 </Col>
                 <Col md={4}>  
                 
-                <p>{error}</p>
+                <p className='text-danger'>{error}</p>
                 <form action='#' onSubmit={generate} method='POST'>
                 <label htmlFor="">*Write down what type of image you want</label>
                 <textarea id="" placeholder='Write here.....' onChange={(txt)=>setText(txt.target.value)}></textarea>
