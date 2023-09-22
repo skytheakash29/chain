@@ -10,7 +10,6 @@ const Chat = () => {
   const [loading, setLoading] = useState(false); // Add loading state
   const [error, setError] = useState('');
 
-  const baseurl = 'https://chainback.onrender.com/'
 
 
 
@@ -18,7 +17,7 @@ const Chat = () => {
     //   fetch dta
     const fetechData = async (chat)=>{
         try{
-            const response = await fetch(`${baseurl}/chat`,{
+            const response = await fetch("https://chinback.onrender.com/chat",{
                 method:"POST",
                 headers:{
                     "content-type":"application/json"
@@ -30,7 +29,7 @@ const Chat = () => {
             const data = response.json();
             return data
         }catch(err){
-            return err
+            alert("There is a issue in Api request. Please refresh the page.")
         }
     }
     // mutation

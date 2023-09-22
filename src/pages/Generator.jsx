@@ -21,8 +21,9 @@ const Generator = () =>{
 
         if(text){
             setLoading(true);
+            setError('')
             try {
-                const response = await fetch(`${baseurl}/generate`, {
+                const response = await fetch(`https://chainback.onrender.com/generate`, {
                   method: "POST",
                   headers: {
                     "Content-Type": "application/json"
@@ -51,7 +52,6 @@ const Generator = () =>{
     }
 
 
-    // image orientation change
 
     return(
         <Container className="index">
@@ -60,7 +60,9 @@ const Generator = () =>{
                     <div className="generatedImageBox">
                         <div className="generatedImgItem">
                             {url === " " && <label>*Generate image to show below</label>}
-                            <img src={ loading ? "https://i.gifer.com/VjWP.gif": url} alt="" height="400" width="400"/><br/>
+                            {/* loader setted */}
+                            <img src={ loading ? "https://i.pinimg.com/originals/5c/d3/57/5cd3570c93ae3dc5bd2cdb299d02115b.gif": url} alt="" height="400" width="400"/><br/>  
+                            
                             <p>Note : To download generated image "Long press on image". Then click save image</p>
                         </div>
                     </div>
