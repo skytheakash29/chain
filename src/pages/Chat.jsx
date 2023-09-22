@@ -3,11 +3,14 @@ import { Link } from 'react-router-dom';
 import { useMutation } from 'react-query';
 import {useState} from 'react'
 
+
 const Chat = () => {
   const [prompt, setPrompt] = useState('');
   const [chat, setChat] = useState([]);
   const [loading, setLoading] = useState(false); // Add loading state
   const [error, setError] = useState('');
+
+  const baseurl = 'https://chainback.onrender.com/'
 
 
 
@@ -15,7 +18,7 @@ const Chat = () => {
     //   fetch dta
     const fetechData = async (chat)=>{
         try{
-            const response = await fetch("http://localhost:4000/chat",{
+            const response = await fetch(`${baseurl}/chat`,{
                 method:"POST",
                 headers:{
                     "content-type":"application/json"

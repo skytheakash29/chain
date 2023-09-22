@@ -9,6 +9,8 @@ const Generator = () =>{
     const [loading,setLoading] = useState(false);
     const [ error,setError] = useState();
     const [url,setUrl] = useState(front_img);
+    const baseurl = 'https://chainback.onrender.com/'
+
 
     const generate= async(e)=>{
 
@@ -20,7 +22,7 @@ const Generator = () =>{
         if(text){
             setLoading(true);
             try {
-                const response = await fetch("http://localhost:4000/generate", {
+                const response = await fetch(`${baseurl}/generate`, {
                   method: "POST",
                   headers: {
                     "Content-Type": "application/json"
