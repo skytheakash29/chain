@@ -1,7 +1,5 @@
 import {Container,Row,Col,Toast } from 'react-bootstrap'
-import indexImg from "../assets/index_img.png"
-import logo from "../assets/logo.png"
-import { useState,useEffect } from 'react'
+import { useState} from 'react'
 import front_img from '../assets/front_img.jpg'
 
 
