@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+:root {
+  --primary-font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  --theme: #2C314D;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color:var(--theme);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+/* for viewport height */
+.rowVH{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 95vh;
+}
+
+button{
+  color: #ffffffb4;
+  font-weight: 400;
+  text-transform: capitalize;
+  font-family: 'Poppins', sans-serif;
+  width: 250px;
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 7px;
+
+}
+.buttonSecondary{
+  background-color: #252A41 ;
+}
+.buttonPrimary{
+  background-color: #2563EB;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+/* index csss */
+
+.heroImg{
+  border: 5px solid #424c74;
+  border-radius: 10px;
+}
+.logo{
+  margin-bottom: 15px;
+}
+.index h4{
+  color:#22C55E ;
+  font-family: poppins;
+}
+.index p{
+  color: #7a6dbd ;
+  font-family: var(--primary-font-family);
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+/* generated image */
+.generatedImageBox{
+  overflow: auto;
+}
+
+textarea{
+    height: 200px;
+    width: 100%;
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid #424c74;
+    border-radius: 9px;
+    color: #ffffffb4;
+    font-family: 'Poppins';
+    font-size: 14px;
+    padding: 10px;
+}
+textarea:focus-visible{
+  outline: none;
+}
+.imgStyle{
+  margin: 0px 0px;
+}
+select,input{
+  padding: 10px 15px;
+  width: 100%;
+  border-radius: 9px;
+  color: #ffffffb4;
+  font-family: 'Poppins';
+  font-size: 14px;
+  background-color: transparent;
+  border: 1px solid #424c74;
+
+}
+option{
+  background-color: var(--theme);
+  border: 3px solid #424c74;
+  color: #ffffffb4;
+  border-radius: 5px;
+  font-family: var(--primary-font-family);
+
+}
+.inputGroup{
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0px;
+
+}
+.imgSize{
+  width: 75%;
+}
+select:focus-visible,option:focus-visible,input:focus-visible{
+  outline: none;
+}
+
+
+/* label desing */
+label{
+  font-family: var(--primary-font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffffb4;
+  margin-bottom: 7px;
+  display: block;
+  text-align: left;
+}
+
+
+/* generatedImgItem */
+.generatedImgItem img{
+  margin-bottom: 20px;
+  border: 5px solid #424c74;
+  border-radius: 7px;
+  width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* chat */
+.chat{
+    background: radial-gradient(#7c767694, transparent);
+    border-radius: 10px;
+    width: 70%;
+    margin: auto;
+    border:1px solid #424c74;
+    position:relative;
+}
+.header{
+  border-bottom:1px solid #424c74;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.header svg{
+  color:white;
+}
+.chatArea{
+  padding: 40px;
+  height:  70vh;
+  overflow: auto;
+
+}
+.footer{
+  padding: 15px;
+  width: 100%;
+  border-top:1px solid #424c74;
+  text-align: center;
+}
+.prompt button{
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+}
+.footer button>svg{
+  background-color: var(--theme);
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  margin-left: 6px;
+  height: 42px;
+  width: 42px;
+  border: 1px solid #424c74;
+  margin-left: -4px;
+
+}
+.chatArea input{
+  background-color: var(--theme);
+  width: 75%!important;
+}
+.prompt{
+  width: 75%;
+  margin: auto;
+}
+.prompt input{
+  width: 90%!important;
+}
+.msg{
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 15px;
+  font-family: var(--primary-font-family);
+  width: 75%;
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+}
+.msg  p{
+  margin: 0px!important;
+}
+.serverRes{
+  text-align: left;
+  background-color: #535bf2;
+}
+.clientMsg{
+  background-color: #2563EB;
+  margin-left:auto ;
+  text-align: left;
+
+}
+
+
+
+
+
+
+
+
+.breadcumb{
+  border: 1px solid #424c74;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  font-family: var(--primary-font-family);
+  font-weight: 400; 
+  display: inline;
+  margin-right: 5px;
+  font-size: 10px;
+}
+@media screen and (max-width:991px) {
+
+  .chat{
+    width: 90%;
+  }
+  .chatArea{
+    padding:20px;
+  }
+  .msg{
+    width: 85%;
+  }
+  .prompt{
+    width: 100%;
+  }
+}
+  
+
+.disclaimer{
+  width: 80%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+.disclaimer p{
+  color: #7a6dbd ;
+  font-family: var(--primary-font-family);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+/* For Webkit-based browsers */
+::-webkit-scrollbar {
+  width: 5px; /* Width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar thumb (the part you drag) */
+  border-radius: 6px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the scrollbar thumb on hover */
+}
+
+
+
+
+
+/* responsive */
+@media screen and (max-width:991px){
+  .heroImg{
+    width: 100%!important;
+    margin-bottom: 50px;
+  }
+
+
+  /* prompt input */
+  .prompt input{
+    width: 75%!important;
+  }
+
+
+  /* generated img div */
+  .generatedImgItem img{
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width:992px) and (max-width:1199px){
+  .generatedImgItem img{
+    width: 60%;
+    height: 60%;
+  }
+}

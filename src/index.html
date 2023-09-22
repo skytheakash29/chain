@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="emu"></p>
+    <script>
+        let r = document.querySelector(".emu");
+
+
+
+
+        // Example array of objects
+
+
+
+        const chat = ["Sure! Here's an example of a basic React function component:", '', '```', "import React from 'react';", '', 'const MyComponent = () => {', '  return (', '    <div>', '      <h1>Hello, world!</h1>', '      <p>This is a React function component.</p>', '    </div>', '  );', '}', '', 'export default MyComponent;', '```', '', "In the above example, we are creating a functional…ns the JSX code to define the component's layout.", '', 'Inside the `return` statement, we have a `<div>` e… an `<h1>` heading and a paragraph `<p>` element.', '', 'Finally, we export the component using the `export…ort and use it in other parts of our application.', '', 'You can use this template as a starting point and customize it based on your requirements.']
+
+// Use a regular expression to split the code into paragraphs based on empty lines
+const stringWithLineBreaks = chat.join('<br>');
+     r.innerHTML = stringWithLineBreaks;
+ 
+
+    </script>
+</body>
+</html>
